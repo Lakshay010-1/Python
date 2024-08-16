@@ -1,5 +1,5 @@
 """Class"""
-
+#Abstraction, Encapsulation
 class Employee: 
     language = "Python" # This is a class attribute
     salary = 1200000
@@ -32,7 +32,7 @@ class Employee:
         self.fname = value.split(" ")[0]
         self.lname = value.split(" ")[1]
 
-
+# Polymorphism
 class Number:
     num=72          # This is a class attribute
 
