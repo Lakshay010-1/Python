@@ -1,3 +1,4 @@
+from typing import Dict, Union
 # Dictionary-Dictionary is a collection of keys-value pairs (unordered, mutable, un-indexed by position,  Cannot contain duplicate keys)
 emptyDict = {} 
 marks = {
@@ -21,7 +22,23 @@ print(marks, type(marks))
 # print(marks.get("LawLight")) # Prints None
 # print(marks["LawLight"])     # Return Error
 
-#Sets-Set is a collection of non-repetitive elements. (unordered, un-indexed by position, im-mutable, cannot contain duplicate values.)
+# Type hints
+# Dictionary with string keys and integer values
+scores: Dict[str, int] = {"Alice": 90, "Bob": 85}
+
+# Union type for variables that can hold multiple types
+identifier: Union[int, str] = "ID123"
+identifier = 12345 # Also valid
+
+# Dictionary Merge
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'b': 3, 'c': 4}
+merged = dict1 | dict2
+print(merged) # Output: {'a': 1, 'b': 3, 'c': 4}    
+
+
+#Sets
+# Set is a collection of non-repetitive elements. (unordered, un-indexed by position, im-mutable, cannot contain duplicate values.)
 emptySet = set()
 set1= {1, 5, 32, 54,5, 5, 5, "Harry"} 
 set1.add(45)
