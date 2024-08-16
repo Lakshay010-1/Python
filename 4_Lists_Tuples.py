@@ -1,4 +1,5 @@
 from functools import reduce
+from typing import List, Tuple
 
 # List - Lists are containers to store a set of values of any data type.
 emptyList=[]
@@ -22,6 +23,10 @@ value = list2.pop(3)           # Delete Data at index 3
 print(sum(list2))              # Return sum of the list 
 print(value)
 print(list2)
+
+# Type hints
+# List of integers
+numbers: List[int] = [1, 2, 3, 4, 5]
 
 # List Comprehension
 myList = [1, 2, 9, 5, 3, 5]
@@ -86,6 +91,10 @@ i = TupleData.index(3424)       #Return first occurence index of the mentioned e
 print(i)
 
 print(len(TupleData))           #Return length of the tuple
+
+# Type hints
+# Tuple of a string and an integer
+person: Tuple[str, int] = ("Alice", 30)
 
 # Enumerate
 enum = [3, 513, 53, 535]
