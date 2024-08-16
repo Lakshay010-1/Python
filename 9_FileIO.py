@@ -67,3 +67,12 @@ file6.close()
 with open("file.txt", "r") as f:
 # Read the contents of the file and print the contents
     print(f.read())
+
+
+# Open Multiple Context files in a single "with" statement
+with (
+open('file1.txt') as f1,
+open('file2.txt') as f2
+):
+     print(file1.read())
+     print(file2.read())
