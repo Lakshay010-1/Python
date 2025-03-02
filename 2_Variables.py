@@ -4,22 +4,26 @@
 
 # Type Annotation
 n : int = 5
-name: str = "Harry"
-
+name: str = "Lakshay"
 
 # Data Types
-a=1         # 'a' is an Integer variable                {identifies 'a' as <class 'int'>}
+a=1         # 'a' is an Integer variable                {identifies 'a' as <class 'int'>}. [100_000 is also valid and interpreted as 100000]
 b=2.98      # 'b' is a Floating Point Number variable   {identifies 'b' as <class 'float'>}
 c="Luck"    # 'c' is a String variable                  {identifies 'c' as <class 'str'>}
-d=True      # 'd' is a Boolean variable                 {identifies 'd' as <class 'bool'>}
+d=True      # 'd' is a Boolean variable                 {identifies 'd' as <class 'bool'>} [True,False]
 e=None      # 'e' is a None type Variable               {identifies 'e' as <class 'NoneType'>}
 
 # Operators
 #(i). Arithmetic operators: +, -, *, /, %, '**'=Exponentiation Operator (a^2 is invalid for finding Exponential) etc.
 num=1+2-3*4/5                               #   '*' -> '/' -> '%' -> '+' -> '-'
 n=int(input("Enter Value of n: "))
-expo=3**n                       # This computes 3 raised to the power of n
+expo=3**n                           # This computes 3 raised to the power of n
 print(expo)
+
+div_float=3/2
+print(round(div_float))             # Round the float number to the whole number(increment to the next closest whole number)
+print(round(div_float,2))           # Print the float number until n decimal places. e.g. in this case n=2
+div_int=3//2
 
 #(ii). Assignment operators: =, +=, -=, *=, /= etc.
 n1=num
