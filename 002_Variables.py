@@ -158,6 +158,6 @@ print(a is b)                                                   # True
 # 7. Comparison Operators (==, !=, >, <, >=, <=, is, is not, in, not in)                            Chained
 # 8. Logical NOt (not)                                                                              Right-to-left
 # 8. Logical AND & OR (and, or)                                                                     Left-to-right
-# 9. Ternary Operator (?:)                                                                          Right-to-left
+# 9. Ternary Operator (value_if_true if condition else value_if_false)                              Right-to-left
 # 10. Walrus Operator (:=)                                                                          Right-to-left
 # 11. Assignment Operators (=, +=, -=, *=, /=, //=, %=, **=, &=, |=, ^=, >>=, <<=)                  Right-to-left
