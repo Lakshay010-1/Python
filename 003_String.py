@@ -6,8 +6,7 @@
 
 
 # format
-string1= "{1} is a good {0}".format("XYZphone", "smartphone")
-print(string1)
+string1= "{1} is a good {0}.".format( "smartphone","XYZphone")                      # XYZphone is a good smartphone.
 
 # Method Chaining
 sentence="My name is <|Name|> and i am a <|Occasion|>."
