@@ -1,4 +1,4 @@
-# In terminal Python uses REPL(Read Evaluate Print Loop).  
+# In terminal Python uses REPL(Read Evaluate Print Loop).
 # Module - Module is a file containing code written by somebody else (usually) which can be imported and used in our programs.
 # PIP    - Pip is the package manager for python. You can use pip to install a module on your system.
 
@@ -9,26 +9,28 @@
 
 # os module
 from os import listdir
+
 # Specify the Directory you want to list
-directory_path='/'
+directory_path = "/"
 
 # Use os module and list all files and directories in the specified path
 contents = listdir(directory_path)
 
 # Print each file and directory name
 for item in contents:
-      print(item)
+    print(item)
 
 
 # pyttsx3 Module
 # Installation Command
 # pip install pyttsx3
 import pyttsx3
+
 engine = pyttsx3.init()
 engine.say("I Can Do this all Day...")
 engine.runAndWait()
 
-# Changing Voice , Rate and Volume 
+# Changing Voice , Rate and Volume
 """ 
 import pyttsx3
 engine = pyttsx3.init() # object creation
