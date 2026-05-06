@@ -2,14 +2,18 @@
 # Module - Module is a file containing code written by somebody else (usually) which can be imported and used in our programs.
 # PIP    - Pip is the package manager for python. You can use pip to install a module on your system.
 
-# os module
 # Usuage
-import os
+# Approach 1) import <module_name> OR import <module_name> as alias_name
+# Approach 2) from <module_name> import <class/function>
+# Approach 3) from <module_name> import *
+
+# os module
+from os import listdir
 # Specify the Directory you want to list
 directory_path='/'
 
 # Use os module and list all files and directories in the specified path
-contents=os.listdir(directory_path)
+contents = listdir(directory_path)
 
 # Print each file and directory name
 for item in contents:
@@ -19,8 +23,6 @@ for item in contents:
 # pyttsx3 Module
 # Installation Command
 # pip install pyttsx3
- 
-# Usage
 import pyttsx3
 engine = pyttsx3.init()
 engine.say("I Can Do this all Day...")
