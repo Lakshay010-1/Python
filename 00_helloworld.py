@@ -1,5 +1,5 @@
 # Input
-name=input("Enter Your Character Name:\n")
+name = input("Enter Your Character Name:\n")
 
 # Output
 # (i) print() => It shows text, numbers, or results of code so you can see them
