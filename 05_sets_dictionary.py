@@ -3,6 +3,22 @@
 # 1. Dictionary
 # 2. Sets
 
+# Dictionary vs Sets
+# Feature	            Dictionary (dict)	    Set (set)
+# Structure	            Key → Value mapping	    Collection of unique values
+# Syntax	            {"a": 1}	            {1, 2, 3}
+# Empty form	        {}	                    set()
+# Stores	            Keys and values	        Only values
+# Duplicate handling	Keys unique	            Elements unique
+# Ordered(3.7+)         Yes	                    No guaranteed order
+# Mutable	            Yes	                    Yes
+# Indexing	            By key	                No indexing
+# Lookup speed	        O(1) by key	            O(1) membership
+# Internals	            Hash table	            Hash table
+# Membership check	    Checks keys	            Checks elements
+# Use cases	            Structured data	        Fast uniqueness/membership
+
+
 # 1. Dictionary
 # Dictionary is a hash map / associative array implementation that stores data as key → value mappings.
 # Insertion Ordered(3.7+), Mutable, Un-indexed by position,  Unique Keys
