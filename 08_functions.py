@@ -4,6 +4,8 @@
 #   They support flexible parameter passing, multiple return styles, closures, decorators, and more.
 #   Can return multiple values (tuple packing).
 
+# Argument Passing Model -> Pass-by-object-reference value(or call by sharing)
+
 # Functions & Methods
 #   Functions → standalone
 #   Methods → belongs to a class
@@ -45,6 +47,8 @@ square = lambda x: x * x
 
 
 # Parameters and Arguments
+# Parameters = Placeholder variable in function definition
+# Arguments = Actual value supplied to function
 # (Python requires this order rule :-  Positional arguments must come before keyword arguments)
 # fn(a,b): pass
 
@@ -70,6 +74,38 @@ greet("Light", "Bye World!")
 # In this a equals to 2 and b is equals to 1.
 greet(ending="Hello World!", name="L")
 
+
+# 4. *args -> Variable Positional Arguments
+# - Collects extra positional arguments into a tuple.
+# Example :
+def square_all(*values):
+    return [value * value for value in values]
+
+
+square_all_result = square_all(1, 2, 3, 4, 5)
+# print(f"Square 1 time -> {square_all_result}")
+# Output: Square 1 time -> [1, 4, 9, 16, 25]
+
+squares_square_result = square_all(*square_all_result)                  # Argument Unpacking Lists/Tuples with *
+# print(f"Square 2 times -> {squares_square_result}")
+# Output: Square 2 times -> [1, 16, 81, 256, 625]
+
+
+# 5. **kwargs -> Variable Keyword Arguments
+# - Collects extra keyword arguments into a dictionary.
+def show_info(**user_information):
+    print(user_information)
+
+
+user_info = {"Name": "Lakshay", "Language": "Python"}
+show_info(**user_info)                                                  # Argument Unpacking Dictionaries with **
+# Output: {'Name': 'Lakshay', 'Language': 'Python'}
+
+show_info(Email="lakshaybyte@gmail.com", Species="Human")
+# Output: {'Email': 'lakshaybyte@gmail.com', 'Species': 'Human'}
+
+# 6. Positional-Only Parameters (/)
+# 7. Keyword-Only Parameters (*)
 
 # Function Type Annotation
 def sum(a: int, b: int) -> int:
