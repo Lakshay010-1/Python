@@ -34,12 +34,18 @@ while i < len(list1):
 
 # range function
 for i in range(0, 10, 2):  # range values [0,2,4,6,8]
-    print(
-        i, end=" "
-    )                                                                       # 'end' controls what gets printed after each print statement finishes
+    print(i, end=" ")
+    # 'end' controls what gets printed after each print statement finishes
 
-for item in list1:
-    print(item)
+
+# Enumerate
+# Syntax :
+# for index, item in enumerate(iterable):
+# pass
+
+
+for idx, item in enumerate(list1):
+    print(f"{idx} => {item}")
 
 # 2(ii). for-else loop => The else block executes only if the loop completes normally (no break).
 # Syntax
@@ -52,7 +58,8 @@ tuple1 = (1, 2, 5, 3, 7, "ZERO")
 for item in tuple1:
     print(item)
 else:
-    print("done")                                                           # this is printed when the loop Completely Executed.
+    print("done")
+    # this is printed when the loop Completely Executed.
 
 
 # 3. Comprehension
@@ -73,15 +80,18 @@ evens = [x for x in range(10) if x % 2 == 0]
 #   1. ‘break’ is used to come out of the loop when specific condition encountered. It instructs the program to exit the loop.
 for i in range(15):
     if i == 13:
-        break                                                               # Exit the loop right when 'i' is equal to 13
+        break
+        # Exit the loop right when 'i' is equal to 13
     print(i)
 
 #   2. ‘continue’ is used to stop the current iteration of the loop and continue to the next one. It instructs the Program to “skip this iteration”.
 for i in range(15):
     if i == 13:
-        continue                                                            # Skip this iteration when 'i' is equal to 13
+        continue
+        # Skip this iteration when 'i' is equal to 13
     print(i)
 
 #   3. 'pass' is a null statement. It instructs to “do nothing”.
 for i in range(15):
-    pass                                                                    # Placeholder (does nothing)
+    pass
+    # Placeholder (does nothing)
