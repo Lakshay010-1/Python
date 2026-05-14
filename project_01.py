@@ -1,6 +1,7 @@
+# Rock, Paper, Scissors, Lizard, Spock Game
+
 import random
 
-# Rock, Paper, Scissors, Lizard, Spock Game
 # 0 = Rock, Defeats = Scissors, Lizard
 # 1 = Paper, Defeats = Rock, Spock
 # 2 = Scissors, Defeats = Paper, Lizard
