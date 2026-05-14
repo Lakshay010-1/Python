@@ -9,11 +9,13 @@ name: str = "Lakshay"
 
 
 # type() - type() function is used to find the data type of a given variable
-t = type(n)                                                 # <class 'int'>
+t = type(n)
+# <class 'int'>
 
 
 # Type Casting - convert the Python variable datatype into a certain data type. e.g.-int(), float(), str()
-a = str(n)                                                  # <class 'str'>
+a = str(n)
+# <class 'str'>
 
 
 # Lambda function
@@ -23,33 +25,47 @@ square_of_5 = square(5)  # Output:25
 
 # Data Types
 # (i). Numeric Types
-a = 1                                                       # {identifies as <class 'int'>}. # [100_000 is also a valid integer value and interpreted as 100000]
-b = 2.98                                                    # {identifies as <class 'float'>}
-c = 2 + 7j                                                  # {identifies as <class 'complex'>}
+a = 1
+# {identifies as <class 'int'>}. # [100_000 is also a valid integer value and interpreted as 100000]
+b = 2.98
+# {identifies as <class 'float'>}
+c = 2 + 7j
+# {identifies as <class 'complex'>}
 
 # (ii). Sequence Types
 d = "Luck"  # {identifies as <class 'str'>}
-e = [1, 2, 3, 4]                                            # {identifies as <class 'list'>}
-f = (1, 2, 3, 4)                                            # {identifies as <class 'tuple'>}
-g = range(1, 4)                                             # {identifies as <class 'range'>}
+e = [1, 2, 3, 4]
+# {identifies as <class 'list'>}
+f = (1, 2, 3, 4)
+# {identifies as <class 'tuple'>}
+g = range(1, 4)
+# {identifies as <class 'range'>}
 
 # (iii). Mapping Types
-h = {"key1": "value1", "key2": "value2"}                    # {identifies as <class 'dict'>}
+h = {"key1": "value1", "key2": "value2"}
+# {identifies as <class 'dict'>}
 
 # (iv). Set Types
-i = {1, 2, 3}                                               # {identifies as <class 'set'>}
-j = frozenset([1, 2, 3])                                    # {identifies as <class 'frozenset'>}
+i = {1, 2, 3}
+# {identifies as <class 'set'>}
+j = frozenset([1, 2, 3])
+# {identifies as <class 'frozenset'>}
 
 # (v). Boolean Types
-k = True                                                    # {identifies as <class 'bool'>} # [True,False]
+k = True
+# {identifies as <class 'bool'>} # [True,False]
 
 # (vi). Binary Types
-l = b"hello"                                                # {identifies as <class 'bytes'>}
-m = bytearray(5)                                            # {identifies as <class 'bytearray'>}
-n = memoryview(b)                                           # {identifies as <class 'memoryview'>}
+l = b"hello"
+# {identifies as <class 'bytes'>}
+m = bytearray(5)
+# {identifies as <class 'bytearray'>}
+n = memoryview(b)
+# {identifies as <class 'memoryview'>}
 
 # (vii). None Types
-o = None                                                    # {identifies as <class 'NoneType'>}
+o = None
+# {identifies as <class 'NoneType'>}
 
 
 # Operators
@@ -64,15 +80,16 @@ o = None                                                    # {identifies as <cl
 #      **	    Exponentiation	(a^2 is invalid for finding Exponential)
 # Example:
 n = int(input("Enter Value of n: "))
-expo = 3**n                                                 # This computes 3 raised to the power of n
-div_float = 3 / 2                                           # Output: 1.5   (float)
-div_int = 3 // 2                                            # Output: 1     (int)
-round_closest = round(
-    div_float
-)                                                           # Round the float number to the whole number(increment to the next closest whole number)
-round_2_decimal_places = round(
-    div_float, 2
-)                                                           # Print the float number until n decimal places. e.g. in this case n=2
+expo = 3**n
+# This computes 3 raised to the power of n
+div_float = 3 / 2
+# Output: 1.5   (float)
+div_int = 3 // 2
+# Output: 1     (int)
+round_closest = round(div_float)
+# Round the float number to the whole number(increment to the next closest whole number)
+round_2_decimal_places = round(div_float, 2)
+# Print the float number until n decimal places. e.g. in this case n=2
 
 
 # (ii). Assignment operators: =, +=, -=, *=, /= etc.
@@ -164,3 +181,11 @@ print(a is b)  # True
 # 9. Ternary Operator (value_if_true if condition else value_if_false)                              Right-to-left
 # 10. Walrus Operator (:=)                                                                          Right-to-left
 # 11. Assignment Operators (=, +=, -=, *=, /=, //=, %=, **=, &=, |=, ^=, >>=, <<=)                  Right-to-left
+
+
+# Scope
+# Python searches scope in "LEGB" rule exact order
+# L -> Local Scope
+# E -> Enclosing Scope
+# G -> Global Scope
+# B -> Built-in Scope
