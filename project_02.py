@@ -1,4 +1,5 @@
 # Guess the Number
+
 import random
 
 n = random.randint(1, 100)
