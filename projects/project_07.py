@@ -12,11 +12,12 @@ y_distance = 400 / no_turtles
 race_end_line = 250
 
 screen.colormode(255)
-user_guess = screen.textinput(
-    title="Make you guess",
-    prompt=f"Which turtle do you think will win 1-{no_turtles} starting top to bottom : ",
+user_guess = int(
+    screen.textinput(
+        title="Make you guess",
+        prompt=f"Which turtle do you think will win 1-{no_turtles} starting top to bottom : ",
+    )
 )
-print(user_guess)
 
 
 def random_color_val():
@@ -53,7 +54,7 @@ while race_on:
         turtle.forward(move)
         race_on = race_on and (False if turtle.xcor() >= race_end_line else True)
         if not race_on:
-            if turtle_moving+1 == user_guess:
+            if turtle_moving + 1 == user_guess:
                 print(
                     f"Congratulations, Your guess was right. turtle at position {turtle_moving+1} won."
                 )
